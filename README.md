@@ -4,7 +4,7 @@ Transmute is commited to supporting Open Source Projects, Friends, Partners and 
 
 ## Guides
 
-#### [Create a Linked Data Signature Suite](./how-to/w3c/create-a-linked-data-signature-suite)
+#### [Create a Linked Data Signature Suite](./how-to/w3c/create-a-linked-data-signature-suite.md)
 
 ## Standards
 
