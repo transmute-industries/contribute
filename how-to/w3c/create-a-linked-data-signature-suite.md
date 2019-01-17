@@ -14,13 +14,13 @@ Be sure to add unit tests and documentation. Keep the implementation and depende
 
 > An algorithm that takes an input document that has more than one possible representation and always transforms it into a deterministic representation. For example, alphabetically sorting a list of items is a type canonicalization. This process is sometimes also called normalization.
 
-_prefer [URDNA2015]._(https://github.com/digitalbazaar/jsonld.js/#canonize-normalize)_.
+*_prefer [URDNA2015](https://github.com/digitalbazaar/jsonld.js/#canonize-normalize)_.*
 
 ##### message digest algorithm
 
 > An algorithm that takes an input message and produces a cryptographic output message that is often many orders of magnitude smaller than the input message. These algorithms are often 1) very fast, 2) non-reversible, 3) cause the output to change significantly when even one bit of the input message changes, and 4) make it infeasible to find two different inputs for the same output.
 
-_prefer [sha256](https://www.movable-type.co.uk/scripts/sha256.html)._
+*_prefer [sha256](https://www.movable-type.co.uk/scripts/sha256.html)._*
 
 ##### signature algorithm
 
