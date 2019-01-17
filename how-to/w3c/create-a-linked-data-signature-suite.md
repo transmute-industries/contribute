@@ -4,7 +4,7 @@
 
 ## 2. Create a repository 
 
-`PROPOSAL-SuiteName2019` with [Apache License 2.0 License](http://www.apache.org/licenses/LICENSE-2.0) and a README describing why you believe a new signature suite is needed, and referencing an existing signature suites that did not meet your needs.
+`PROPOSAL-SuiteName2019` with [Apache License 2.0 License](http://www.apache.org/licenses/LICENSE-2.0) and a README describing why you believe a new signature suite is needed, and referencing any existing signature suites that did not meet your needs.
 
 ## 3. Develop your signature suite
 
@@ -30,9 +30,11 @@ _Be sure to link to the cryptographic protocol specification in as much detail a
 
 ## 4. Consider Compatibility
 
-As you are creating a new signature suite, it is unlikely that any software systems exists which can generate and verify compatible signed linked data. However, you should add tests that get as close to a compatible test as possible.
+As you are creating a new signature suite, it is unlikely that any software systems exists which can generate and verify compatible signed linked data. However, you should add tests for your any potential shared dependencies.
 
-For example, you should ensure that the raw signatures can be verified with multitple implementations of the signature algorithm. Ensure the the JSON-LD can be expanded and compacted, and parsed by [jsonld.js](https://github.com/digitalbazaar/jsonld.js/), or a similar library for languages other than javascript. Ensure that your signature encoding process is clear, and that the signature payload is as small as it can reasonably be, for example: for ecdsa over secp256k1, you may be encoding r and s Big Number values as hex, concatonated them, and then base64url encoding such as `base64url.encode(${hex(BN(r))}${hex(BN(s))}${v})`, make it very clear what you are doing so its easy for someone to reconstruct your method in a different language.
+For example, you should ensure that the raw signatures can be verified with multitple implementations of the signature algorithm. Ensure the the JSON-LD can be expanded and compacted, and parsed by [jsonld.js](https://github.com/digitalbazaar/jsonld.js/), or a similar library for languages other than javascript. Ensure that your signature encoding process is clear, and that the signature payload is as small as it can reasonably be.
+
+For examples, ecdsa over secp256k1, you may be encoding r and s Big Number values as hex, concatonating them, and then base64url encoding such as `base64url.encode(${hex(BN(r))}${hex(BN(s))}${v})`, make it very clear what you are doing so its easy for someone to reconstruct your method in a different language.
 
 _Prefer 100% test coverage, to ensure compatibility can be established via TDD._
 
