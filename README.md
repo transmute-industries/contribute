@@ -1,6 +1,6 @@
 # Contribute
 
-Transmute is commited to supporting Open Source Projects, Friends, Partners and Standards. This repository is for developers, designers, writers and readers who wish to contribute to the Identity, Security, Web, API and Blockchain Ecosystems.
+[Transmute](https://www.transmute.industries/) is commited to supporting Open Source projects, friends, partners and standards. This repository is for developers, designers, writers and readers who wish to contribute to the Identity, Security, Web, API and Blockchain Ecosystems.
 
 ## Guides
 
