@@ -1,12 +1,12 @@
 # How to create a W3C Linked Data Signature Suite
 
-1. Read the [latest specification](https://w3c-dvcg.github.io/ld-signatures/).
+## 1. Read the [latest specification](https://w3c-dvcg.github.io/ld-signatures/).
 
-2. Create a repository 
+## 2. Create a repository 
 
 `PROPOSAL-SuiteName2019` with [Apache License 2.0 License](http://www.apache.org/licenses/LICENSE-2.0) and a README describing why you believe a new signature suite is needed, and referencing an existing signature suites that did not meet your needs.
 
-3. Develop your signature suite
+## 3. Develop your signature suite
 
 Be sure to add unit tests and documentation. Keep the implementation and dependencies as small as possible. Be sure to define the following [terminology](https://w3c-dvcg.github.io/ld-signatures/#terminology) specifically:
 
@@ -28,7 +28,7 @@ _prefer [sha256](https://www.movable-type.co.uk/scripts/sha256.html)._
 
 _Be sure to link to the cryptographic protocol specification in as much detail as possible, including ideally a reference to a working implementation with 100% test coverage and a security review._
 
-4. Consider Compatibility
+## 4. Consider Compatibility
 
 As you are creating a new signature suite, it is unlikely that any software systems exists which can generate and verify compatible signed linked data. However, you should add tests that get as close to a compatible test as possible.
 
@@ -36,7 +36,7 @@ For example, you should ensure that the raw signatures can be verified with mult
 
 _Prefer 100% test coverage, to ensure compatibility can be established via TDD._
 
-5. Draft an edit to the [registry](https://w3c-ccg.github.io/ld-cryptosuite-registry/)
+## 5. Draft an edit to the [registry](https://w3c-ccg.github.io/ld-cryptosuite-registry/)
 
 Create a repository for the suite specification that is seperate from your concrete implementation, for example [lds-rsa2018](https://github.com/w3c-dvcg/lds-rsa2018). 
 
